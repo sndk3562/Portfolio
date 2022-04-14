@@ -1,0 +1,61 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+<h3 class="mb-4">Profile</h3>
+<div class="mb-5">
+    <div class="row">
+        <div class="col-md-8">
+            <p>{{ profile_data.introduction|linebreaksbr }}</p>
+        </div>
+
+    </div>
+</div>
+
+<h3 class="mb-4">Technical Skills</h3>
+<div class="mb-5">
+        {% for technical in technical_data %}
+                 <h5 class="mb-0">{{ technical.name }}</h5><br>
+                     <hr>
+        {% endfor %}
+
+</div>
+
+
+<h3 class="mb-4">Qualifications</h3>
+<div class="mb-5">
+        {% for qualification in qualification_data %}
+                 <h5 class="mb-0">{{ qualification.name }}</h5><br>
+        {% endfor %}
+
+</div>
+
+<h3 class="mb-4">Education</h3>
+<div class="mb-5">
+    {% for education in education_data %}
+        <div class="d-flex justify-content-between">
+            <h5>{{ education.course }}<span class="small text-secondary"> - {{ education.school }}</span></h5>
+            <p class="mb-1">{{ education.period }}</p>
+        </div>
+        <p>{{ education.place }}</p>
+        <hr>
+    {% endfor %}
+</div>
+
+
+
+
+<h3 class="mb-4">Experience</h3>
+<div class="mb-5">
+    {% for experience in experience_data %}
+        <div class="d-flex justify-content-between">
+            <h5>{{ experience.occupation }}<span class="small text-secondary"> - {{ experience.company }}</span></h5>
+            <p class="mb-1">{{ experience.period }}</p>
+        </div>
+        <p class="mb-1">{{ experience.description }}</p>
+        <p>{{ experience.place }}</p>
+        <hr>
+    {% endfor %}
+</div>
+
+{% endblock %}

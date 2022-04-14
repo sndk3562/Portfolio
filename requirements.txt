@@ -1,0 +1,11 @@
+asgiref==3.5.0
+Django==3.2.6
+django-widget-tweaks==1.4.12
+Pillow==8.1.2
+pytz==2022.1
+sqlparse==0.4.2
+whitenoise==6.0.0
+gunicorn
+python-dotenv
+dj-database-url
+psycopg2-binary
