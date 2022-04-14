@@ -6,3 +6,6 @@ __pycache__
 .DS_Store
 media
 .idea/
+staticfiles
+main.py
+README.md
