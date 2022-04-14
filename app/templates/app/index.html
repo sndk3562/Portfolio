@@ -1,9 +1,9 @@
 {% extends "app/base.html" %}
-
+{%load static%}
 {% block content %}
 
 <div class="card top d-flex flex-column justify-content-end mb-4">
-    <img src="{{ profile_data.topimage.url }}" alt="">
+    <img src="{% static 'img/empty-sea-and-beach-background.jpg' %}" border="0" />
     <div class="overlay text-white p-5">
         <h1 class="title">{{ profile_data.title }}</h1>
 
@@ -14,11 +14,8 @@
     {% for work in work_data %}
         <div class="col-6 col-md-3 mb-3">
             <div class="card work-thumbnail">
-                {% if work.thumbnail %}
-                    <img class="work-img" src="{{ work.thumbnail.url }}" alt="">
-                {% else %}
-                    <img class="work-img" src="{{ work.image.url }}" alt="">
-                {% endif %}
+                    <img src="{% static 'img/logo.png' %}" width="60%" height="60%"/>
+
                 <div class="work-title text-center">
                     <p class="mb-0">{{ work.title }}</p>
                 </div>
