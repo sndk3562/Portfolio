@@ -26,10 +26,11 @@ SECRET_KEY = 'ca(x6rx6utl#bvv2oj1(i-x%stfr+rn7ehxp)9(!1pv6=z&x_%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://port-ko-dd6b03500230.herokuapp.com/']
+#ALLOWED_HOSTS = ['https://port-ko-dd6b03500230.herokuapp.com/']
+ALLOWED_HOSTS = ['port-ko.herokuapp.com']
 
 
-CSRF_TRUSTED_ORIGINS    = [ os.environ.get("HOST")]
+#CSRF_TRUSTED_ORIGINS    = [ os.environ.get("HOST")]
 
 
 # Application definition
