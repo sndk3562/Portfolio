@@ -45,17 +45,5 @@
 
 
 
-<h3 class="mb-4">Experience</h3>
-<div class="mb-5">
-    {% for experience in experience_data %}
-        <div class="d-flex justify-content-between">
-            <h5>{{ experience.occupation }}<span class="small text-secondary"> - {{ experience.company }}</span></h5>
-            <p class="mb-1">{{ experience.period }}</p>
-        </div>
-        <p class="mb-1">{{ experience.description }}</p>
-        <p>{{ experience.place }}</p>
-        <hr>
-    {% endfor %}
-</div>
 
 {% endblock %}
