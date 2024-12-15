@@ -34,7 +34,7 @@
 <div class="mb-5">
     {% for education in education_data %}
         <div class="d-flex justify-content-between">
-            <h5>{{ education.course }}<span class="small text-secondary"> - {{ education.school }}</span></h5>
+            <h5>{{ education.school }}<span class="small text-secondary"> - {{  education.course }}</span></h5>
             <p class="mb-1">{{ education.period }}</p>
         </div>
         <p>{{ education.place }}</p>
