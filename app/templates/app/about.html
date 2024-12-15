@@ -8,7 +8,20 @@
         <div class="col-md-8">
             <p>{{ profile_data.introduction|linebreaksbr }}</p>
         </div>
+        <div class="col-md-4">
+            <div class="card text-center px-5 py-4">
 
+
+                <div class="d-flex justify-content-around">
+                    {% if profile_data.github %}
+                        <a href="{{ profile_data.github }}" target="_blank"><i class="fab fa-github fa-lg rounded btn-dark icon"></i></a>
+                    {% endif %}
+                    {% if profile_data.facebook %}
+                        <a href="{{ profile_data.facebook }}" target="_blank"><i class="fab fa-facebook-f fa-lg rounded btn-primary icon"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
