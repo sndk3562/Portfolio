@@ -29,7 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = [os.environ.get("HOST")]
 
 
-CSRF_TRUSTED_ORIGINS    = [ "https://port-ko-dd6b03500230.herokuapp.com/" ]
+CSRF_TRUSTED_ORIGINS    = [ os.environ.get("HOST")]
 
 
 # Application definition
