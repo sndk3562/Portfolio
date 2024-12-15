@@ -38,8 +38,8 @@ class Experience(models.Model):
 
 
 class Education(models.Model):
+    chool = models.CharField('学校', max_length=100)
     course = models.CharField('コース', max_length=100)
-    school = models.CharField('学校', max_length=100)
     place = models.CharField('場所', max_length=100)
     period = models.CharField('期間', max_length=100)
 
