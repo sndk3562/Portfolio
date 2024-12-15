@@ -7,7 +7,6 @@ class Profile(models.Model):
     introduction = models.TextField('自己紹介')
     github = models.CharField('github', max_length=100, null=True, blank=True)
     facebook = models.CharField('facebook', max_length=100, null=True, blank=True)
-    instagram = models.CharField('instagram', max_length=100, null=True, blank=True)
     topimage = models.ImageField(upload_to='images', verbose_name='トップ画像')
 
     def __str__(self):
